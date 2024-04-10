@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background-color: grey;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 15px;
+    overflow: hidden;
+    transform: translateX(-275px);
+    transition: transform 500ms ease-out;
+}
+
+
+.menu:hover .menu-lable {
+    opacity: 0;
+}
+.menu:hover {
+    transform: translateX(0px);
+}
+.menu-list {
+    width: 275px;
+}
+
+.menu-lable {
+    width: 25px;
+    writing-mode: vertical-rl;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    left: 275px;
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    transition: transform 2.5s ease;
+}
+
+li {
+    list-style-image: url("/images/starsolid.gif");
+
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
